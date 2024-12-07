@@ -1,3 +1,4 @@
+
 import time
 
 class User:
@@ -83,7 +84,7 @@ class UrTube:
                         print("Your age is less than 18 years old, please leaved this page")
                     else:
                         while vid.time_now != vid.duration+1:
-                            time.sleep(0.1)
+                            time.sleep(1)
                             print(vid.time_now, end=" ")
                             vid.time_now += 1
                         time.sleep(1)
